@@ -32,6 +32,10 @@ def meteo():
     <h2>Mon Graphique</h2>
 </body>
 </html>
+
+@app.route("/rapport/")
+def mongraphique():
+    return render_template("graphique.html")
   
 if __name__ == "__main__":
   app.run(debug=True)
