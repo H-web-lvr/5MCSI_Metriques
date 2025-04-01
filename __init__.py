@@ -23,16 +23,6 @@ def meteo():
         results.append({'Jour': dt_value, 'temp': temp_day_value})
     return jsonify(results=results)
 
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Graphique</title>
- </head>  
-<body>
-    <h2>Mon Graphique</h2>
-</body>
-</html>
-
 @app.route("/rapport/")
 def mongraphique():
     return render_template("graphique.html")
