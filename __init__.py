@@ -30,6 +30,10 @@ def mongraphique():
 @app.route("/histogramme/")
 def monhistogramme():
     return render_template("temperature.html")
+
+@app.route("/conctats/")
+def monhistogramme():
+    return render_template("contacts.html")
   
 if __name__ == "__main__":
   app.run(debug=True)
